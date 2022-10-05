@@ -9,8 +9,8 @@
 // Accessing a value at a given index O(1)
 // Updating a value at a given index O(1)
 // Inserting a value at the beginning O(n)
-// Accessing a value in the middle O(n)
-// Accessing a value at the end O(1)
+// Inserting a value in the middle O(n)
+// Inserting a value at the end O(1)
 /* amortized O(1)*/
 
 // Removing a value at the beginning O(n)
