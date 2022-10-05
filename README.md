@@ -1,3 +1,3 @@
-# TS Algorithms and Data Structures
+# JS Theory
 
-About algorithms and data structures.
+About algorithms and data structures and js theory
