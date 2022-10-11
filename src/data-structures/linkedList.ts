@@ -1,7 +1,4 @@
-class CustomNode {
-  constructor(public value: any, public next?: CustomNode, public prev?: CustomNode) {
-  }
-}
+import CustomNode from "./customNode";
 
 class LinkedList {
   public head: any
