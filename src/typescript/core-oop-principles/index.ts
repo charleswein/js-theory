@@ -1,4 +1,4 @@
-interface Todo {
+interface TodoInit {
   title: string;
   description?: string;
 }
@@ -9,8 +9,8 @@ const todo1 = {
 };
 
 const updateTodo = (
- todo: Todo,
- fieldsToUpdate: Partial<Todo> // allow partial updates
+ todo: TodoInit,
+ fieldsToUpdate: Partial<TodoInit> // allow partial updates
 ) => ({ ...todo, ...fieldsToUpdate });
 
 const result1 = updateTodo(todo1, {
@@ -23,9 +23,9 @@ const todo2 = {
 };
 
 const updateRequiredTodo = (
- todo: Required<Todo>,
- fieldsToUpdate: Partial<Todo>
-): Required<Todo> => ({ ...todo, ...fieldsToUpdate });
+ todo: Required<TodoInit>,
+ fieldsToUpdate: Partial<TodoInit>
+): Required<TodoInit> => ({ ...todo, ...fieldsToUpdate });
 
 const result2 = updateRequiredTodo(todo2, {
   description: "throw out trash",

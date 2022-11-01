@@ -2,14 +2,23 @@
   "name": "ts-algorithms-and-data-structure",
   "private": true,
   "version": "0.0.0",
-  "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
     "preview": "vite preview"
   },
+  "ts-node": {
+    "compilerOptions": {
+      "module": "commonjs"
+    }
+  },
   "devDependencies": {
+    "@types/node": "^18.8.3",
+    "ts-node": "^10.9.1",
     "typescript": "^4.6.4",
     "vite": "^3.1.0"
+  },
+  "dependencies": {
+    "live-server": "^1.2.2"
   }
 }

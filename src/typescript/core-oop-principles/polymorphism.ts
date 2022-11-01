@@ -50,7 +50,7 @@ abstract class CoffeeDecorator implements Coffee {
 }
 
 class WithMilk extends CoffeeDecorator {
-  constructor(private readonly c: Coffee) {
+  constructor(readonly c: Coffee) {
     super(c);
   }
 
@@ -64,7 +64,7 @@ class WithMilk extends CoffeeDecorator {
 }
 
 class WithSprinkles extends CoffeeDecorator {
-  constructor(private readonly c: Coffee) {
+  constructor(readonly c: Coffee) {
     super(c);
   }
 
@@ -78,7 +78,7 @@ class WithSprinkles extends CoffeeDecorator {
 }
 
 class WithSugar extends CoffeeDecorator {
-  constructor(private readonly c: Coffee) {
+  constructor(readonly c: Coffee) {
     super(c);
   }
 
